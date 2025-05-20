@@ -13,12 +13,12 @@ import {
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBd_dUirpfltpCybOZJr6sde06IuM8z5pw",
-  authDomain: "premium-subscriber.firebaseapp.com",
-  projectId: "premium-subscriber",
-  storageBucket: "premium-subscriber.firebasestorage.app",
-  messagingSenderId:  "553946747439",
-  appId:"1:553946747439:web:503c3c46847b75aaf76cda",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
